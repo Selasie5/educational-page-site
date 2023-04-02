@@ -10,7 +10,7 @@
 /* Declaring CSS variables */
     :root {
         --deep-blue: #0c1022;
-        --orange-red: #ff5619;
+        --main-color: #10E985;
         --white: white;
     }
 
@@ -229,7 +229,7 @@
         .faq-question {
             display: flex;
             gap: 1rem;
-            background-color: var(--orange-red);
+            background-color: var(--main-color);
             padding: 1.5rem;
         }
 
@@ -263,7 +263,7 @@
             height: 80px;
             border-radius: 50%;
             overflow: hidden;
-            border: 10px solid var(--orange-red);
+            border: 10px solid var(--main-color);
             text-align: center;
             margin-inline: auto;
         }
@@ -275,7 +275,7 @@
         }
 
         .testimonial {
-            background-color: var(--orange-red);
+            background-color: var(--main-color);
             padding: 2rem;
             margin-top: 3rem;
             position: relative;
