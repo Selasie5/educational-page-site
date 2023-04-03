@@ -31,6 +31,10 @@
         header h1 {
             align-self: center;
         }
+        header .logo-dot
+        {
+            color: var(--main-color);
+        }
         body{
             background-color: var(--deep-blue);
             color: white;
@@ -41,7 +45,8 @@
         .main-categories-container, 
         .popular-courses-main,
         .faq-section,
-        .testimonials-section
+        .testimonials-section,
+        .footer-section
         {
             max-width: 78rem;
             margin-inline: auto;
@@ -60,7 +65,7 @@
         }
 
         a:hover{
-            color: rgb(255, 86, 25);
+            color: var(--main-color);
             transition: color 500ms;
         }
 
@@ -90,6 +95,10 @@
             font-size: 2.5rem;
 
         }
+        .key-note
+        {
+            color: var(--main-color);
+        }
 
         .home-content{
             align-self: center;
@@ -103,7 +112,7 @@
 
         .button
         {
-            background-color: rgb(200, 54, 0);
+            background-color: var(--main-color);
             border: 1px solid transparent;
             padding: 1rem 1.5rem;
             color: #fff;
@@ -141,7 +150,7 @@
         }
 
         .card {
-            background-color:rgb(2, 15, 53);
+            background-color:rgba(60, 200, 242, 0.394);
             border-radius: 2rem;
             padding: 2rem 2rem;
         }
@@ -201,14 +210,16 @@
 
         .course-card{
             text-align: center;
-            background-color: rgba(67, 52, 236, 0.394);
+            background-color: rgba(60, 200, 242, 0.394);
             padding-block: 3rem;
+            border-radius: 10px;
             
             
         }
         .course-card:hover{
             background: transparent;
-            border: 1px solid rgba(67, 52, 236)
+            border: 1px solid var(--main-color);
+            transform: translate(1);
             
         }
 
@@ -287,12 +298,70 @@
             width: 60px;
             height: 60px;
             position: absolute;
-            left: 47%;
+            left: 45%;
             top: -1rem;
-            background: linear-gradient(135deg, rgba(253,185,29,1) 0%,rgba(255,86,25,1) 30%);
+            background: linear-gradient(135deg, rgba(16,233,133,1) 0%, rgb(4, 235, 223) 30%);;
             z-index: -1;
             transform: rotate(45deg);
            
+        }
+        .testimonials-section{
+            overflow: hidden;
+            position: relative;
+        }
+        .testimonials-section h2{
+            text-align: center;
+        }
+.testimonial-container 
+{
+    margin-block: 2rem;
+}
+  
+        /* Footer Section style */
+        .footer-section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 6rem;
+            padding-block: 2rem;
+
+        }
+
+
+        footer{
+            background-color: var(--main-color);
+            margin-top: 5rem;
+        }
+
+        li{
+            list-style: none;
+            padding: 0.5rem 0;
+            
+        }
+
+        li a{
+            text-decoration: none;
+            color: var(--white);
+
+        }
+    
+        .contact-section p{
+            padding-block: 0.2rem;
+        }
+
+        .socials{
+            padding-block: 2rem;
+            /* display: flex;
+            gap: 1rem; */
+        }
+        
+    /* child selector can be used to achieve the same display flex code effect as above */
+        /* .socials svg:nth-child(2),  .socials svg:nth-child(4){
+            margin-inline: 1rem;
+        } */
+    
+        .egator-section p{
+            line-height: 1.5;
+            padding-block: 2rem;
         }
 
         
